@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEEuSIC | Offical</title>
+    <link rel="icon" href="compact-disc-solid.svg" id="icon">
+    <script
+      src="https://kit.fontawesome.com/f0341ca207.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="musicplayernew.css">
+
+  </head>
+  <body>
+    <div class="leftbar">
+      <i class="fas fa-ellipsis-h bars"></i>
+      <ul class="sidebar">
+        <li>
+          <div class="home"><i class="fas fa-house-user"></i></div>
+          home
+        </li>
+        <li id="search_list">
+          <div class="search"><i class="fab fa-searchengin"></i></div>
+          search
+        </li>
+        <li>
+          <div class="library"><i class="fas fa-book-open"></i></div>
+          library
+        </li>
+        <li>Create Playlist</li>
+        <li><i class="fas fa-heart fa-1x barheart"></i>Liked Songs</li>
+      </ul>
+    </div>
+    <i class="fas fa-redo" id="redo"></i>
+    <div id="header">
+      <i class="fas fa-compact-disc fa-2x" id="logo"></i>
+      <h1 id="webname"><a id = 'webname'  href="http://127.0.0.1:5500/__pycache__/cpp%20data%20structures/stack/websites/musicplayer/musicplayernew.html">MEEuSIC</a></h1>
+    </div>
+    <div class="mainimgbox">
+      <img
+        id="mainimg"
+        src="https://i.scdn.co/image/ab67616d0000b273e2630cd9e516f240ed6775d1"
+        alt=""
+      />
+      <i class="far fa-heart fa-1x" id="like"></i>
+    </div>
+    <div class="singlesong">
+      <i class="fas fa-step-backward" id="prev"></i>
+      <i class="fas fa-play" id="play_button"></i>
+
+      <div id="main">
+        <p id="song_name"></p>
+        <p id="artist_name"></p>
+      </div>
+      <p id="duration">0:00</p>
+      <p id="songduration">0:00</p>
+      <img
+        id="songimg"
+        src="https://i.scdn.co/image/ab67616d0000b273e2630cd9e516f240ed6775d1"
+        alt=""
+      />
+      <i class="fas fa-step-forward" id="next"></i>
+    </div>
+    <div class="range"></div>
+    <i class="fas fa-volume-up up"></i>
+    <div class="range2"></div>
+    <div class="colored_range2 range2"></div>
+    <i class="fas fa-volume-down down fa-0.5x"></i>
+    <div class="value"></div>
+    <i class="fas fa-dot-circle circle"></i>
+    <div class ="sidebox">
+      <p class="side_header">Songs</p>
+      <div class = "side_song">
+        <i class="fas fa-play myplay" id="play_button"></i>
+        <div class="centerregion"><p class = "side_song_name">UNFORGETTABLE</p>
+        <p class="side_artist_name">Diljit Dosanjh</p>
+      </div>
+        <img class="side_song_image" src="https://i.scdn.co/image/ab67616d0000b273ca3e81ffb16f782d4d094a6f">
+      </div>
+      <div class="shuffle">
+        <i class="fas fa-reply-all shufflebtn"></i>
+      </div>
+    </div>
+    <div class="main_div">
+      <p class="lyrical_header">LYRICS</p>
+      <p class="lyrics"></p>
+    <div class="search_div">
+      <input type="text" name="Search" id="search_bar" placeholder="Search Your Music..." style="font-weight: 500;">
+      <i class="fas fa-times"></i>
+      <i class="fas fa-arrow-right"></i>
+      <ul class="song_result"></ul>
+    </div>    <audio src="" id="us"></audio>
+   <script src="musicplayernew.js"></script>
+  </body>
+</html>
+
+
